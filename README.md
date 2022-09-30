@@ -91,8 +91,9 @@ a {
     color: black;
 }
 
-/* End Basic Styling */
 
+
+/* End Basic Styling */
 /* Background and Image Styling */
 
 .bg_img {
@@ -108,7 +109,7 @@ a {
     background-size: cover;
 }
 /* End Background and Image Styling */
-/* This controls the form size and contents */
+/* Form Styling */
 .admin_panel {
     position: relative;
     top: 1px;
@@ -141,7 +142,60 @@ table {/* adds space between columns */
   border-collapse: separate;
   border-spacing: 30px 30px;
 }
+input, textarea {
+    width: 100%;
+    margin: 1% 0 0 0;
+    padding: 1% 0 2% 1%;
+    line-height: 18px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid silver;
+}
+label {
+	display: inline-block;
+    width: 95%;
+    text-align: left;
+    margin: 1% 0 0 0;
+    color: black;
+    line-height: 18px;
+    font-size: 20px;
+}
+input[type="submit"]:hover {
+    background-color: #355664;
+    color: white;
+    border: 2px solid #b3b3b3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	transition: opacity 0.3s ease-in-out;
+}
 
+input, textarea {
+    width: 100%;
+    margin: 1% 0 0 0;
+    padding: 1% 0 2% 1%;
+    line-height: 18px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid silver;
+}
+label {
+	display: inline-block;
+    width: 95%;
+    text-align: left;
+    margin: 1% 0 0 0;
+    color: black;
+    line-height: 18px;
+    font-size: 20px;
+}
+
+/* form item container */
+.frmObject_container {
+	display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+/* End Form Styling */
 /* form button container */
 .frmBtn_container {
     margin: auto;
@@ -178,129 +232,5 @@ table {/* adds space between columns */
     box-shadow: 0 0px 0px rgba(0,0,0,0.3);
 	transition: opacity 0.3s ease-in-out;
 }
-
-
-input, textarea {
-    width: 100%;
-    margin: 1% 0 0 0;
-    padding: 1% 0 2% 1%;
-    line-height: 18px;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 2px solid silver;
-}
-label {
-	display: inline-block;
-    width: 95%;
-    text-align: left;
-    margin: 1% 0 0 0;
-    color: black;
-    line-height: 18px;
-    font-size: 20px;
-}
-input[type="submit"]:hover {
-    background-color: #355664;
-    color: white;
-    border: 2px solid #b3b3b3;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-	transition: opacity 0.3s ease-in-out;
-}
-
-/* Navbar styling */
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #213e4a;
-}
-/* Float the list items side by side */
-ul.topnav li {
-    float: left;
-}
-/* Style the links inside the list items */
-ul.topnav li a {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-ul.topnav li a:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-	transition: opacity 0.3s ease-in-out;
-    background-color: #355664;
-}
-
-input, textarea {
-    width: 100%;
-    margin: 1% 0 0 0;
-    padding: 1% 0 2% 1%;
-    line-height: 18px;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 2px solid silver;
-}
-label {
-	display: inline-block;
-    width: 95%;
-    text-align: left;
-    margin: 1% 0 0 0;
-    color: black;
-    line-height: 18px;
-    font-size: 20px;
-}
-#block-footer {
-    clear: both;
-    display: flex;
-    width: 100%;
-	-moz-box-sizing: border-box;
-    margin: 0 auto;
-    background-color: #213e4a;
-    position: absolute;
-    bottom: 0;
-    height: 40px;
-}
-#block-footer a, #block-footer p {
-    flex: 1;
-    color: white;
-    padding: 15px 15px;
-	font-size: 14px;
-    line-height: 10px;
-	font-family:'PT Sans', Arial, Helvetica, sans-serif;
-}
-#footer-left {
-    width: 40%;
-    text-align: right;
-}
-#block-footer{
-	float:left;
-	clear:both;
-	width:100%;
-}
-#block-footer a {
-	color: white;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	text-decoration: none;
-	outline: medium none;
-}
-#block-footer a:hover {
-    color: #CABE96;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-/* form item container */
-.frmObject_container {
-	display: block;
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-}
+/* End form button container */
 ```
