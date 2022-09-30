@@ -292,3 +292,4 @@ def sitcom_api(request):
  - Worked with a team and was able to glean from their work as well as interact with the leads when I hit a snag that I couldn't solve.
  - Learning and utilizing good version control practices through git bash and Pycharm. 
  	- This enabled me to revert to previous points in my project when needed as well debug without negatively influencing others hard work.
+ - Due to being in this program while working another job and managing a side business, I was really able to hone my own time management skills which I feel is crucial to any proffesional career, espially in the tech industry.
