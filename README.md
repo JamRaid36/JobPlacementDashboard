@@ -237,7 +237,7 @@ label {
 
 ## Back End Stories
   - [Details Page](#details-page)
-  - [Connect to and Parse through API ](#connect-to-and-parse-through-api)
+  - [Connect to and Parse through API](#connect-to-and-parse-through-api)
 
 ### Details Page
 For these stories I was tasked with displaying the description for items I had previosuly added to the database and then also being able to edit the data associted ith these items. These are functions I employed to render and enable editing features for the app.
@@ -262,4 +262,29 @@ def sitcom_update(request, pk):
             return redirect('../../read')
     content = {'form': form, 'sitcom': sitcom}
     return render(request, 'Sitcoms/sitcoms_update.html', content)
+```
+### Connect to and Parse through API
+For these 2 stories I had to find an API that I wanted to use, connect to it and parse through the correct data I wanted to display.
+
+```
+# Story #6-(API Pt 1): Connect to API ----------------------------------------------------------------------------------
+# Story #7-(API Pt 2): Parse through JSON
+
+def sitcom_api(request):
+    url = "https://yahoo-weather5.p.rapidapi.com/weather"
+
+    querystring = {"location": "longview,wa", "format": "json", "u": "f"}
+
+    headers = {
+        "X-RapidAPI-Key": "1ba8d27b19mshd71557ea88643ebp14a569jsnc81e62fac8f7",
+        "X-RapidAPI-Host": "yahoo-weather5.p.rapidapi.com"
+    }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    api_info = json.loads(response.text)
+    temp_int = api_info["current_observation"]["condition"]["temperature"]
+    current_temperature = str(api_info["current_observation"]["condition"]["temperature"]) + ' \N{DEGREE SIGN}F'
+    content = {"current_temperature": current_temperature, "temp_int": temp_int}
+    return render(request, 'Sitcoms/sitcoms_api.html', content)
 ```
