@@ -4,7 +4,7 @@ I recently did my first live project with the Tech Academy for the Software Deve
 
 ## Front End Stories
   - [Build The Basic App](#build-the-basic-app)
-  - [Front End Imporovements](#front-end-imporvements)
+  - [Front End Imporovements](#front-end-improvements)
 
 ### Build the Basic App
 For this story I had to create an app using the Django framework that could track my hobby data as well as displaying a home page with basic content. This included a Navbar, Background, Title and Footer. This would be the base of every page for the project
