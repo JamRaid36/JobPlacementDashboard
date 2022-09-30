@@ -1,6 +1,6 @@
 # Live Project
 ## Introduction
-I recently did my first live project with the Tech Academy for the Software Developer Bootcamp. I was given the opportunity to do a two  week sprint with a team of instructors and peers. We continued work on an ongoing project creating apps designed to take advantage of various Python and Django features. Within the scope of this project we created databases to keep track of data, implemented CRUD functionality and interacted with APIs to retrieve and save data. This project was built utilizing Python, Django, SQLite, and HTML/CSS. This was my first opportunity to work with a tech team in a profesional environment and it was very exciting. I was able to complete both [front end stories](#front-end-stories) and [back end stories](#back-end-stories) as well as being able to gain and work with some valuable project management [skills](#skills) that I'm sure will come in handy in the future.
+I recently did my first live project with the Tech Academy for the Software Developer Bootcamp. I was given the opportunity to do a two  week sprint with a team of instructors and peers. We continued work on an ongoing project creating apps designed to take advantage of various Python and Django features. Within the scope of this project we created databases to keep track of data, implemented CRUD functionality and interacted with APIs to retrieve and save data. This project was built utilizing Python, Django, SQLite, and HTML/CSS. This was my first opportunity to work with a tech team in a profesional environment and it was very exciting. I was able to complete both [front end stories](#front-end-stories) and [back end stories](#back-end-stories) as well as being able to gain and work with some valuable project management [skills](#skills) that I'm sure will come in handy in the future. Below are a few of the stories I completed during this project.
 
 ## Front End Stories
   - [Build The Basic App](#build-the-basic-app)
@@ -233,4 +233,33 @@ label {
 	transition: opacity 0.3s ease-in-out;
 }
 /* End form button container */
+```
+
+## Back End Stories
+  - [Details Page](#details-page)
+  - [Connect to and Parse through API ](#connect-to-and-parse-through-api)
+
+### Details Page
+For these stories I was tasked with displaying the description for items I had previosuly added to the database and then also being able to edit the data associted ith these items. These are functions I employed to render and enable editing features for the app.
+```
+# Story #4: Details page -----------------------------------------------------------------------------------------------
+
+
+def sitcom_details(request, pk):
+    sitcom = get_object_or_404(Sitcom, pk=pk)
+    content = {'sitcom': sitcom}
+    return render(request, 'Sitcoms/sitcoms_details.html', content)
+
+# Story #5: Edit and Delete Functions ----------------------------------------------------------------------------------
+
+
+def sitcom_update(request, pk):
+    sitcom = get_object_or_404(Sitcom, pk=pk)
+    form = SitcomForm(data=request.POST or None, instance=sitcom)
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            return redirect('../../read')
+    content = {'form': form, 'sitcom': sitcom}
+    return render(request, 'Sitcoms/sitcoms_update.html', content)
 ```
