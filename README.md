@@ -234,6 +234,7 @@ label {
 }
 /* End form button container */
 ```
+Jump to: [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories), [Other Skills Learned](#other-skills-learned), [Page Top](#introduction)
 
 ## Back End Stories
   - [Details Page](#details-page)
@@ -288,6 +289,7 @@ def sitcom_api(request):
     content = {"current_temperature": current_temperature, "temp_int": temp_int}
     return render(request, 'Sitcoms/sitcoms_api.html', content)
 ```
+Jump to: [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories), [Other Skills Learned](#other-skills-learned), [Page Top](#introduction)
 ## Other Skills Learned
  - Worked with a team and was able to glean from their work as well as interact with the leads when I hit a snag that I couldn't solve.
  - Learning and utilizing good version control practices through git bash and Pycharm. 
