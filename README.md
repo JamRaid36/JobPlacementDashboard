@@ -1,6 +1,6 @@
 # Live Project
 ## Introduction
-I recently did my first live project with the Tech Academy for the Software Developer Bootcamp. I was given the opportunity to do a two  week sprint with a team of instructors and peers. We continued work on an ongoing project creating apps designed to take advantage of various Python and Django features. Within the scope of this project we created databases to keep track of data, implemented CRUD functionality and interacted with APIs to retrieve and save data. This project was built utilizing Python, Django, SQLite, and HTML/CSS. This was my first opportunity to work with a tech team in a profesional environment and it was very exciting. I was able to complete both [front end stories](#front-end-stories) and [back end stories](#back-end-stories) as well as being able to gain and work with some valuable project management [skills](#skills) that I'm sure will come in handy in the future. Below are a few of the stories I completed during this project.
+I recently did my first live project with the Tech Academy for the Software Developer Bootcamp. I was given the opportunity to do a two  week sprint with a team of instructors and peers. We continued work on an ongoing project creating apps designed to take advantage of various Python and Django features. Within the scope of this project we created databases to keep track of data, implemented CRUD functionality and interacted with APIs to retrieve and save data. This project was built utilizing Python, Django, SQLite, and HTML/CSS. This was my first opportunity to work with a tech team in a profesional environment and it was very exciting. I was able to complete both [front end stories](#front-end-stories) and [back end stories](#back-end-stories) as well as being able to gain and work with some valuable project management [skills](#other-skills-learned) that I'm sure will come in handy in the future. Below are a few of the stories I completed during this project.
 
 ## Front End Stories
   - [Build The Basic App](#build-the-basic-app)
@@ -264,7 +264,7 @@ def sitcom_update(request, pk):
     return render(request, 'Sitcoms/sitcoms_update.html', content)
 ```
 ### Connect to and Parse through API
-For these 2 stories I had to find an API that I wanted to use, connect to it and parse through the correct data I wanted to display.
+For these two stories I had to find an API that I wanted to use, connect to it and parse through the correct data I wanted to display.
 
 ```
 # Story #6-(API Pt 1): Connect to API ----------------------------------------------------------------------------------
@@ -288,3 +288,7 @@ def sitcom_api(request):
     content = {"current_temperature": current_temperature, "temp_int": temp_int}
     return render(request, 'Sitcoms/sitcoms_api.html', content)
 ```
+## Other Skills Learned
+ - Worked with a team and was able to glean from their work as well as interact with the leads when I hit a snag that I couldn't solve.
+ - Learning and utilizing good version control practices through git bash and Pycharm. 
+ 	- This enabled me to revert to previous points in my project when needed as well debug without negatively influencing others hard work.
