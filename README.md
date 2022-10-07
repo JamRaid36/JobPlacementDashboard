@@ -13,87 +13,6 @@ For this story I had to create an app using the Django framework that could trac
 ### Front End Improvements
 This was basic front end improvement to the UI/UX. I went throu and tried to and changed color schemes, altered button placement and form sizes to my liking and make sure things were consistent from page to page!
 ```
-/* Basic Styling */
-
-* {
-    margin: 0;
-}
-
-html {
-    background-color: lightblue;
-}
-
-body {
-	position: relative;
-	overflow: hidden;
-}
-html, body {
-    height: 100%;
-    margin: 0;
-	padding: 0;
-}
-p {
-	padding: 4px 16px;
-	font-size: 20px;
-	font-family: 'Lato', Georgia, sans-serif;
-	color: #666666;
-}
-
-h1 {
-    color: white;
-    font-family: 'Lobster';
-    font-size: 35px;
-    text-shadow: 3px 2px 1px gray;
-    margin:15px auto;
-    text-align: center;
-}
-h2 {
-    color: #213e4a;
-    font-weight: 900;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-h2 span {
-    font-variant: small-caps;
-    padding: 2px 16px;
-}
-h3 {
-    color: black;
-    font-weight: 900;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 25px;
-}
-h3 span {
-    font-variant: small-caps;
-    padding: 2px 16px;
-}
-
-h4 {
-    padding: 4px 16px;
-	font-size: 15px;
-	font-family: 'Lato', Georgia, sans-serif;
-	color: #666666;
-	text-align: center;
-}
-
-th {
-    font-size: 20px;
-    color: black;
-}
-
-td {
-    font-size: 20px;
-    color: black;
-}
-
-a {
-    color: black;
-}
-
-
-
-/* End Basic Styling */
 /* Background and Image Styling */
 
 .bg_img {
@@ -110,6 +29,7 @@ a {
 }
 /* End Background and Image Styling */
 /* Form Styling */
+
 .admin_panel {
     position: relative;
     top: 1px;
@@ -142,32 +62,6 @@ table {/* adds space between columns */
   border-collapse: separate;
   border-spacing: 30px 30px;
 }
-input, textarea {
-    width: 100%;
-    margin: 1% 0 0 0;
-    padding: 1% 0 2% 1%;
-    line-height: 18px;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 2px solid silver;
-}
-label {
-	display: inline-block;
-    width: 95%;
-    text-align: left;
-    margin: 1% 0 0 0;
-    color: black;
-    line-height: 18px;
-    font-size: 20px;
-}
-input[type="submit"]:hover {
-    background-color: #355664;
-    color: white;
-    border: 2px solid #b3b3b3;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-	transition: opacity 0.3s ease-in-out;
-}
-
 input, textarea {
     width: 100%;
     margin: 1% 0 0 0;
