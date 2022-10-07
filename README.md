@@ -90,43 +90,6 @@ label {
     text-align: center;
 }
 /* End Form Styling */
-/* form button container */
-.frmBtn_container {
-    margin: auto;
-    position: relative;
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100px;
-    height: 50px;
-}
-.btn {
-	flex-grow: 1;
-    justify-content: center;
-    text-align: center;
-    display: inline-block;
-    width: 25%; /* button size */
-    margin: 2% 2% 2% 2%;
-    color: black;
-    padding: 5px 0px;
-    text-decoration: none;
-    font-size: 14px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border: 2px solid silver;
-    border-radius: 5px;
-}
-
-.btn:hover{
-    background-color: #355664;
-    text-decoration: none;
-    color: white;
-    border: 2px solid silver;
-    box-shadow: 0 0px 0px rgba(0,0,0,0.3);
-	transition: opacity 0.3s ease-in-out;
-}
-/* End form button container */
 ```
 Jump to: [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories), [Other Skills Learned](#other-skills-learned), [Page Top](#introduction)
 
